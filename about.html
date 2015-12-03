@@ -4,7 +4,7 @@
     <head>
         <title>About</title>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <link href="breakdances.css" type="text/css" rel="stylesheet">
+        <link href="about-style.css" type="text/css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Corben:bold' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
     </head>
@@ -25,9 +25,59 @@
     only the best, learning-materials. Want to learn how to breakdance like a real b-boy? Or you
     prefer performing a modern dance? You're at the right place! Take a look around, and discover
     the magical world of DANCE!
-        
+    
+    
+    
+    
     </pre>
+    
+    <section>
+        <p> We're always looking for ways to improve our site, 
+            <br/>
+            so let us know what you think in the form below!</p>
+        <form method="post"
+            action"mailto: sarahhazm@gmail.com"
+            enctype="text/plain">
+            Please enter your first name:
+          <input 
+                type="text" 
+                name="last_name" 
+                size="20"
+                maxlength="50"
+                />
+                
+                <br/>
+                <br/>
+            
+            Please enter the dancestyle you would like us to add:
+            
+          <input 
+                type="text" 
+                name="lat" 
+                size="20" 
+                maxlength="20" 
+            />
+            
+                <br/>
+                <br/>
+                
+          <input type="submit" 
+                 value="Click to send us your suggestion." />
+        </form>
+    </section>
   
     </body>
+    
+    <script>
+    
+    $("input[type=submit]").click(
+        function(){
+           console.log("Click event caputured, the button is working!")
+           confirm("Thanks a lot for your input! Now, lets go dancing!");
+        });
+        
+        
+        
+    </script>
     
 </html>

@@ -1,0 +1,148 @@
+html {
+  text-align: center;
+  font-size: 16px;
+}
+
+Body{
+    margin-bottom:200px;
+    background-image:url('http://www.designbolts.com/wp-content/uploads/2014/03/Yellow-blur-background1.jpg');
+}
+
+
+
+a[class="A"] {
+  position: relative;
+ top: 400px;
+    font-family: 'Corben', Georgia, Times, serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffff80;
+    background-color:black;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20%;
+}
+
+a[class="B"] {
+    position: relative;
+    top:130px;
+    font-family: 'Corben', Georgia, Times, serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffff80;
+    background-color:black;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20%;
+}
+
+a[class="C"] {
+  position: relative;
+  left: 560px;
+    font-family: 'Corben', Georgia, Times, serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffff80;
+    background-color:black;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20%;
+}
+
+a:link + a:link {
+    margin-left: 50px;
+    
+}
+
+a:visited {
+    color: #ffff80;
+}
+
+
+h1 {
+    font-family: 'Corben', Georgia, Times, serif;
+    font-size: 70px;
+    line-height: 0px;
+}
+ 
+pre {
+    font-family: 'Corben', Georgia, Times, serif;
+    font-size: 17px;
+    line-height: 30px;
+    position: relative;
+}
+
+#zumba {
+    width: 120px;
+    height: 190px;
+    position: relative;
+    bottom: 93px;
+    right: -80px;
+}
+
+#salsa {
+    width: 140px;
+    height: 180px;
+    position: relative;
+    bottom: 93px;
+    right: -47px;
+}
+
+#ballet {
+    width: 165px;
+    height: 180px;
+    position: relative;
+    bottom: 93px;
+    right: 4px;
+}
+
+#bellydancing {
+    width: 130px;
+    height: 180px;
+    position: relative;
+    bottom: 93px;
+    right: 35px;
+}
+
+#tap {
+    width: 155px;
+    height: 190px;
+    position: relative;
+    bottom: 85px;
+    right: 28px;
+}
+
+#breakdance {
+    width: 140px;
+    height: 175px;
+    position: relative;
+    bottom: 40px;
+    right: -80px;
+}
+
+#hiphop {
+    width: 155px;
+    height: 190px;
+    position: relative;
+    bottom: 36px;
+    right: -75px;
+}
+
+#jazz {
+    width: 180px;
+    height: 190px;
+    position: relative;
+    bottom: 40px;
+    right: -6px;
+}
+
+#modern {
+    width: 155px;
+    height: 190px;
+    position: relative;
+    bottom: 32px;
+    right: 38px;
+}
