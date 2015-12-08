@@ -3,14 +3,27 @@
     <head>
         <title>HOME</title>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <link href="DANCE-home-style.css" type="text/css" rel="stylesheet">
+        <link href="DANCE-home-styles.css" type="text/css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Corben:bold' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="http://www.clubsalsa.com.au/graphics/silhouette.png" sizes="16x16" type="image/png"> 
+      
     </head>
   
     <body>
+    
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+              fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
+         </script>
+    
         <section>
-            <a href ="about.html" ID="about" class="C">about</a>
+            <a href ="about.html" ID="about" class="AboutButton">about</a>
         </section>
   
         <h1>Learn to DANCE!</h1>
@@ -23,58 +36,72 @@
   
         <section>
           
-            <a href ="breakdance.html" class="A">Breakdance</a>
-            <a href ="hiphop.html" class="A" >HipHop</a>
-            <a href ="jazz.html" class="A" >Jazz</a>
-            <a href ="modern.html" class="A" >Modern</a>
+            <a href="breakdance.html" class="DancersLowerBar">Breakdance</a>
+            <a href ="hiphop.html" class="DancersLowerBar" >HipHop</a>
+            <a href ="jazz.html" class="DancersLowerBar" >Jazz</a>
+            <a href ="modern.html" class="DancersLowerBar" >Modern</a>
             <br/>
-            <a href ="zumba.html" class="B"> Zumba</a>
-            <a href ="salsa.html" class="B">Salsa</a>
-            <a href ="ballet.html" class="B">Ballet</a>
-            <a href ="bellydancing.html" class="B">Bellydancing</a>
-            <a href ="tap.html" class="B">Tap</a>
+            <a href ="zumba.html" class="DancersUpperBar"> Zumba</a>
+            <a href ="salsa.html" class="DancersUpperBar">Salsa</a>
+            <a href ="ballet.html" class="DancersUpperBar">Ballet</a>
+            <a href ="bellydancing.html" class="DancersUpperBar">Bellydancing</a>
+            <a href ="tap.html" class="DancersUpperBar">Tap</a>
 
         </section>
         
-        <a href ="zumba.html">    
+        <a href ="zumba.html" class="danceSilhouetteSlide">    
          <img src="http://www.sailorbouboulette.net/public/.zumba-silhouette_m.png" id="zumba">
         </a>
         
-        <a href ="salsa.html">    
+        <a href ="salsa.html" class="danceSilhouetteSlide">    
          <img src="http://www.clubsalsa.com.au/graphics/silhouette.png" id="salsa">
         </a>
         
-        <a href ="ballet.html">    
+        <a href ="ballet.html" class="danceSilhouetteSlide">    
          <img src="http://image.spreadshirtmedia.com/image-server/v1/designs/10157444,width=178,height=178,version=1320836481/Ballerina-Dance-Dancer-1c.png" id="ballet">
         </a>
         
-        <a href ="bellydancing.html">    
+        <a href ="bellydancing.html" class="danceSilhouetteSlide">    
          <img src="http://cadeau-roulotte-gitane--voyageur-gita.info-commerce.fr/images/10574/image/Belly-Dancing.png" id="bellydancing">
         </a>
         
         
-        <a href ="tap.html">    
+        <a href ="tap.html" class="danceSilhouetteSlide">    
          <img src="http://3.bp.blogspot.com/-P-3TEiSM2L4/TdFXUzwkgYI/AAAAAAAADhc/fwAhuiE8vkg/s1600/jazzpose5.gif" id="tap">
         </a>
         
         <br/>
         
-        <a href ="breakdance.html">    
+        <a href ="breakdance.html" class="danceSilhouetteSlide">    
          <img src="http://silhouettesfree.com/professions-and-occupations/breakdance/breakdancing-silhouette-image.png" id="breakdance">
         </a>
         
-        <a href ="hiphop.html">    
+        <a href ="hiphop.html" class="danceSilhouetteSlide">    
          <img src="http://www.ambiance-sticker.com/images/Image/SB_05954_1401265353.png" id="hiphop">
         </a>
         
-        <a href ="jazz.html">    
+        <a href ="jazz.html" class="danceSilhouetteSlide">    
          <img src="http://shirta.de/media/catalog/product/cache/1/small_image/295x295/9df78eab33525d08d6e5fb8d27136e95/m/o/modern-dance-d75285272.png" id="jazz">
         </a>
         
-        <a href ="modern.html">    
+        <a href ="modern.html" class="danceSilhouetteSlide">    
          <img src="http://images.clipartpanda.com/dancer-silhouette-arabesque-tumblr_n3f8cwdMaw1tsamnqo1_1280.png" id="modern">
         </a>
         
-   
+        <br/>
+        <br/>
+        <br/>
+        
+        <div class="fb-like" 
+             data-href="https://www.facebook.com/Learn-How-To-Dance-617672438371138/" 
+             data-width="50" 
+             data-layout="button" 
+             data-action="like" 
+             data-show-faces="true" 
+             data-share="true">
+        </div>
+        
   </body>
+ 
+  
 </html

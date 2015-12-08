@@ -3,9 +3,10 @@
     <head>
         <title>Learn HipHop Dancing!</title>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <link href="breakdances.css" type="text/css" rel="stylesheet">
+        <link href="breakdance.css" type="text/css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Corben:bold' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+         <link rel="icon" href="http://www.ambiance-sticker.com/images/Image/SB_05954_1401265353.png" sizes="16x16" type="image/png"> 
     </head>
     
 <body>
@@ -18,6 +19,21 @@
 
 <p id="demo"></p>
 
+<div id="container" 
+     style= "width:79%;
+             height:5px; 
+             
+             border:1px solid black;">
+             
+  <div id="progress-bar" 
+       style="width:20%;
+       background-color: green;
+       height:5px;">
+  </div>
+  
+</div>
+
+
 <button id = "previous"></button>
 
 <div id="player"></div>  
@@ -28,6 +44,12 @@
     <button id = "play"> </button>
     <button id = "pause"> </button>
 </section>
+
+
+
+
+
+
 
 <script>
     
@@ -119,6 +141,7 @@
     $(function () { // this is a shortcut for document ready
     var experience = ['Beginner', 'Beginner +', 'Intermediate', 'Intermediate +', 'Advanced', 'You have allready completed the last stage'],
         counter = 0;
+        
 
     console.log(experience[counter]); // your initial value
     document.getElementById("demo").innerHTML = experience[counter];
@@ -128,15 +151,25 @@
         counter = (counter + 1)
         console.log(experience[counter]); // the new incremented value
         document.getElementById("demo").innerHTML = experience[counter];
+        console.log((counter+1)*20 + "%");
+        document.getElementById("progress-bar").style.width= (counter+1)*20 + "%";
     });
     
      $("button[id=previous]").click(function () {
         counter = (counter - 1)
         console.log(experience[counter]); // the new incremented value
         document.getElementById("demo").innerHTML = experience[counter];
+         console.log((counter + 1)*20 + "%");
+         console.log(counter);
+        document.getElementById("progress-bar").style.width= (counter+1)*20 + "%";
     });
     
 });
+
+
+
+
+
 
 
 

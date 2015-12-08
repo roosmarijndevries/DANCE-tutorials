@@ -3,9 +3,10 @@
     <head>
         <title>Learn Zumba</title>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <link href="breakdances.css" type="text/css" rel="stylesheet">
+        <link href="breakdance.css" type="text/css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Corben:bold' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="http://www.sailorbouboulette.net/public/.zumba-silhouette_m.png" sizes="16x16" type="image/png">
     </head>
     
 <body>
@@ -17,6 +18,20 @@
 <h1>Learn Zumba!</h1>
 
 <p id="demo"></p>
+
+<div id="container" 
+     style= "width:79%;
+             height:5px; 
+             
+             border:1px solid black;">
+             
+  <div id="progress-bar" 
+       style="width:20%;
+       background-color: green;
+       height:5px;">
+  </div>
+  
+</div>
 
 <button id = "previous"></button>
 
@@ -48,7 +63,7 @@
        player = new YT.Player('player', {
          height: '450',
          width: '1000',
-         videoId: '4ijB4wXwOU8', //this is the part after 'www.youtube.com/watch?v='
+         videoId: 'vNxQefrUUfs', //this is the part after 'www.youtube.com/watch?v='
          events: {
            'onReady': onPlayerReady,
            'onStateChange': onPlayerStateChange
@@ -61,7 +76,7 @@
       function onPlayerReady(event) {
         event.target.loadPlaylist({
         listType: 'playlist',
-        list: 'PLOt6Fd7wPbMdBouJE8q1ji6ZXJRfhMAlw',
+        list: 'PLpD2c5sux-i-CGtid-Y85PMP4r1eVbtMN',
        });
        }
 
@@ -124,16 +139,21 @@
     document.getElementById("demo").innerHTML = experience[counter];
 
     // the next line, of course, assumes you have an element with id="next"
-    $("button[id=next]").click(function () {
+     $("button[id=next]").click(function () {
         counter = (counter + 1)
         console.log(experience[counter]); // the new incremented value
         document.getElementById("demo").innerHTML = experience[counter];
+        console.log((counter+1)*20 + "%");
+        document.getElementById("progress-bar").style.width= (counter+1)*20 + "%";
     });
     
      $("button[id=previous]").click(function () {
         counter = (counter - 1)
         console.log(experience[counter]); // the new incremented value
         document.getElementById("demo").innerHTML = experience[counter];
+         console.log((counter + 1)*20 + "%");
+         console.log(counter);
+        document.getElementById("progress-bar").style.width= (counter+1)*20 + "%";
     });
     
 });

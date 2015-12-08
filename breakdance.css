@@ -120,7 +120,7 @@ p {
      bottom: 160px;
 }
 
-#previous{
+#previous {
     background: url(http://uxrepo.com/static/icon-sets/flat-arrows/svg/flat-circle-chevron-right-arrow.svg) no-repeat;
      background-size: 100px 100px;
      width:100px;
@@ -131,3 +131,9 @@ p {
      position: relative;
      bottom: 160px;
 }
+
+#container {
+    position:relative;
+    left: 131px;
+}
+
