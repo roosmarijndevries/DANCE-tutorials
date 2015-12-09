@@ -27,7 +27,7 @@
              
   <div id="progress-bar" 
        style="width:20%;
-       background-color: green;
+       background-color: red;
        height:5px;">
   </div>
   
@@ -134,17 +134,22 @@
     $(function () { // this is a shortcut for document ready
     var experience = ['Beginner', 'Beginner +', 'Intermediate', 'Intermediate +', 'Advanced', 'You have allready completed the last stage'],
         counter = 0;
+        
+    //The variable backgroundColor helps to change the color of the progress bar//
+    var backgroundColor= ['red','orange', 'yellow', 'lightGreen', 'green'];
+        
 
     console.log(experience[counter]); // your initial value
     document.getElementById("demo").innerHTML = experience[counter];
 
     // the next line, of course, assumes you have an element with id="next"
-     $("button[id=next]").click(function () {
+    $("button[id=next]").click(function () {
         counter = (counter + 1)
         console.log(experience[counter]); // the new incremented value
         document.getElementById("demo").innerHTML = experience[counter];
         console.log((counter+1)*20 + "%");
         document.getElementById("progress-bar").style.width= (counter+1)*20 + "%";
+        document.getElementById("progress-bar").style.backgroundColor = backgroundColor[counter];
     });
     
      $("button[id=previous]").click(function () {
@@ -154,6 +159,7 @@
          console.log((counter + 1)*20 + "%");
          console.log(counter);
         document.getElementById("progress-bar").style.width= (counter+1)*20 + "%";
+        document.getElementById("progress-bar").style.backgroundColor = backgroundColor[counter];
     });
     
 });
